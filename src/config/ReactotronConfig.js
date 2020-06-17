@@ -11,5 +11,5 @@ if (__DEV__) {
 
   tron.clear();
 
-  console.tron =
+  console.tron = tron;
 }
