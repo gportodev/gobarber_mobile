@@ -14,9 +14,11 @@ export const Container = styled.KeyboardAvoidingView.attrs({
   padding: 0 30px;
 `;
 
-export const Form = styled.View`
+export const Form = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+  contentContainerStyle: { padding: 30 },
+})`
   align-self: stretch;
-  margin-top: 50px;
 `;
 
 export const FormInput = styled(Input)`
