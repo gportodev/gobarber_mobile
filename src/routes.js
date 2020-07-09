@@ -1,4 +1,5 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import { useSelector } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -11,10 +12,62 @@ import SignIn from '~/pages/SignIn';
 import SignUp from '~/pages/SignUp';
 import Dashboard from '~/pages/Dashboard';
 import Profile from '~/pages/Profile';
+import SelectProvider from '~/pages/New/SelectProvider';
+import SelectDateTime from '~/pages/New/SelectDateTime';
+import Confirm from '~/pages/New/Confirm';
 
 const Tab = createBottomTabNavigator();
 
 const Stack = createStackNavigator();
+
+function Agendamento({ navigation }) {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerTitleAlign: 'center',
+        headerTransparent: true,
+        headerTintColor: '#FFF',
+        headerLeftContainerStyle: {
+          marginLeft: 20,
+        },
+      }}
+    >
+      <Stack.Screen
+        name="Select Provider"
+        component={SelectProvider}
+        options={{
+          title: 'Selecione o prestador',
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('Dashboard');
+              }}
+            >
+              <Icon name="chevron-left" size={20} color="#FFF" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="SelectDateTime"
+        component={SelectDateTime}
+        options={{
+          title: 'Selecione o horário',
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('Select Provider');
+              }}
+            >
+              <Icon name="chevron-left" size={20} color="#FFF" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Stack.Screen name="Confirm" component={Confirm} />
+    </Stack.Navigator>
+  );
+}
 
 function Dash() {
   return (
@@ -38,6 +91,24 @@ function Dash() {
           ),
         }}
       />
+
+      <Tab.Screen
+        name="Agendamento"
+        component={Agendamento}
+        options={{
+          headerShown: true,
+          tabBarVisible: false,
+          title: 'Agendar',
+          tabBarIcon: () => (
+            <Icon
+              name="add-circle-outline"
+              size={20}
+              color="rgba(255, 255, 255, 0.6)"
+            />
+          ),
+        }}
+      />
+
       <Tab.Screen
         name="Profile"
         component={Profile}
