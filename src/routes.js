@@ -33,7 +33,7 @@ function Agendamento({ navigation }) {
       }}
     >
       <Stack.Screen
-        name="Select Provider"
+        name="SelectProvider"
         component={SelectProvider}
         options={{
           title: 'Selecione o prestador',
@@ -56,7 +56,7 @@ function Agendamento({ navigation }) {
           headerLeft: () => (
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('Select Provider');
+                navigation.navigate('SelectProvider');
               }}
             >
               <Icon name="chevron-left" size={20} color="#FFF" />
@@ -64,7 +64,22 @@ function Agendamento({ navigation }) {
           ),
         }}
       />
-      <Stack.Screen name="Confirm" component={Confirm} />
+      <Stack.Screen
+        name="Confirm"
+        component={Confirm}
+        options={{
+          title: 'Confirmar agendamento',
+          headerLeft: () => (
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('SelectDateTime');
+              }}
+            >
+              <Icon name="chevron-left" size={20} color="#FFF" />
+            </TouchableOpacity>
+          ),
+        }}
+      />
     </Stack.Navigator>
   );
 }

@@ -6,21 +6,22 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const HourList = styled.FlatList.attrs({
-  numColums: 2,
+  numColumns: 2,
   showsVerticalScrollIndicator: false,
 })`
-  padding: 0 20px;
+  align-self: center;
+  margin-top: 70px;
 `;
 
 export const Hour = styled(RectButton)`
   background: #fff;
   border-radius: 4px;
   padding: 20px;
-  flex: 1;
   opacity: ${(props) => (props.enabled ? 1 : 0.6)};
 
   align-items: center;
-  margin: 0 10px 20px;
+  margin: 0px 10px 20px;
+  width: 150px;
 `;
 
 export const Title = styled.Text`
