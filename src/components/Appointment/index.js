@@ -21,10 +21,11 @@ export default function Appointment({ data, onCancel }) {
           source={{
             uri: data.provider.avatar
               ? data.provider.avatar.url
-              : `https://api.adorable.io/avatars/50/${data.provider.name}.jpg`,
+              : `https://randomuser.me/api/portraits/women/${data.provider.id}.jpg`,
           }}
         />
 
+        {console.log(data.provider.avatar)}
         <Info>
           <Name>{data.provider.name} </Name>
           <Time>{dateParsed}</Time>

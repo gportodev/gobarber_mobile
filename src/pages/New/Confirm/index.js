@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { formatRelative, parseISO } from 'date-fns';
 import pt from 'date-fns/locale/pt';
-import { CommonActions } from '@react-navigation/native';
 import { Container, Avatar, Name, Time, SubmitButton } from './styles';
 import Background from '~/components/Background';
 
@@ -31,7 +30,7 @@ export default function Confirm({ route, navigation }) {
           source={{
             uri: provider.avatar
               ? provider.avatar.url
-              : `https://api.adorable.io/avatars/50/${provider.name}.png`,
+              : `https://randomuser.me/api/portraits/women/${provider.id}.jpg`,
           }}
         />
 
