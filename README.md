@@ -16,21 +16,31 @@ Aplicativo para agendamento em salão de beleza
 
 ![](src/screenshots/signupv2.png)  
 
+***
+
 ### Dashboard
 
 ![](src/screenshots/dashboardv3.png)  
+
+***
 
 ### Profile
 
 ![](src/screenshots/profilev1.png)  
 
+***
+
 ### Providers
 
 ![](src/screenshots/providersv1.png)  
 
+***
+
 ### Date and Time
 
 ![](src/screenshots/datetime.png)  
+
+***
 
 ### Confirm
 
