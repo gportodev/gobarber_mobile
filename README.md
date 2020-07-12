@@ -48,4 +48,4 @@ Aplicativo para agendamento em salão de beleza
 
 ***
 
-[![](screenshots/gobarber_youtube.png)](https://youtu.be/kNJdXL0Ld68)
+[![](src/screenshots/gobarber_youtube.png)](https://youtu.be/kNJdXL0Ld68)
