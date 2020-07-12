@@ -2,16 +2,36 @@
 
 Aplicativo para agendamento em salão de beleza
 
-# Screenshot
+# Screenshots
 
 ***
 
 ### Login
 
-![](src/screenshots/loginv1.png)  
+![](src/screenshots/loginv2.png)  
 
 ***
 
 ### Sign Up
 
-![](src/screenshots/signupv1.png)  
+![](src/screenshots/signupv2.png)  
+
+### Dashboard
+
+![](src/screenshots/dashboardv3.png)  
+
+### Profile
+
+![](src/screenshots/profilev1.png)  
+
+### Providers
+
+![](src/screenshots/providersv1.png)  
+
+### Date and Time
+
+![](src/screenshots/datetime.png)  
+
+### Confirm
+
+![](src/screenshots/confirmv1.png)  
