@@ -4,8 +4,6 @@ Aplicativo para agendamento em salão de beleza
 
 # Screenshots
 
-***
-
 ### Login
 
 ![](src/screenshots/loginv2.png)  
