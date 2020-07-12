@@ -14,7 +14,7 @@ Aplicativo para agendamento em salão de beleza
 
 ### Sign Up
 
-![](src/screenshots/signupv1.png)  
+![](src/screenshots/signupv2.png)  
 
 ### Dashboard
 
